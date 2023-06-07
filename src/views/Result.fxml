@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="890.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ResultController">
+   <children>
+      <Label alignment="CENTER" layoutX="181.0" layoutY="69.0" prefHeight="102.0" prefWidth="526.0" styleClass="list-view" stylesheets="@../values/style.css" text="RESULT" textFill="WHITE">
+         <font>
+            <Font size="84.0" />
+         </font>
+      </Label>
+      <Label fx:id="score" alignment="CENTER" layoutX="97.0" layoutY="238.0" prefHeight="150.0" prefWidth="150.0" styleClass="list-view" stylesheets="@../values/style.css" text="8/10" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="35.0" />
+         </font>
+      </Label>
+      <ProgressIndicator fx:id="correct" layoutX="370.0" layoutY="238.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="150.0" progress="0.38" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-background-color: lightgreen; -fx-font-size: 20; -fx-progress-color: green;" />
+      <ProgressIndicator fx:id="incorrect" layoutX="632.0" layoutY="238.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="150.0" progress="0.62" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-background-color: #F93C50; -fx-font-size: 20; -fx-progress-color: red;" />
+      <Label alignment="CENTER" layoutX="95.0" layoutY="410.0" prefHeight="48.0" prefWidth="144.0" text="Score" textFill="#2508e7">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="371.0" layoutY="411.0" prefHeight="48.0" prefWidth="150.0" text="Correct" textFill="#33b172">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font>
+      </Label>
+      <Label layoutX="628.0" layoutY="411.0" prefHeight="54.0" prefWidth="157.0" text="Incorrect" textFill="#ed0202f0">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font>
+      </Label>
+      <Button layoutX="793.0" layoutY="467.0" mnemonicParsing="false" onAction="#switchToScene2" prefHeight="54.0" prefWidth="62.0" style="-fx-background-color: lightblue;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="710.0" layoutY="467.0" mnemonicParsing="false" onAction="#retry" prefHeight="54.0" prefWidth="62.0" style="-fx-background-color: lightblue;" text="Retry" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

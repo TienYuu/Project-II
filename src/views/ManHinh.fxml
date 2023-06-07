@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="545.0" prefWidth="890.0" styleClass="transparent" stylesheets="@../values/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HocController">
+   <children>
+      <AnchorPane layoutX="486.0" layoutY="22.0" prefHeight="413.0" prefWidth="378.0">
+         <children>
+            <VBox fx:id="TheChon" prefHeight="410.0" prefWidth="370.0">
+               <children>
+                  <ImageView fx:id="AnhChu" fitHeight="350.0" fitWidth="368.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Gif1.gif" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="15.0" top="10.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label fx:id="Pinyin" alignment="CENTER" contentDisplay="CENTER" prefHeight="83.0" prefWidth="380.0" styleClass="transparent" stylesheets="@../values/style.css" text="Yi" textAlignment="CENTER">
+                     <font>
+                        <Font name="Microsoft YaHei Bold" size="31.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <ScrollPane fx:id="panel" layoutX="25.0" layoutY="29.0" prefHeight="453.0" prefWidth="331.0" style="-fx-background-radius: 360;" styleClass="transparent" stylesheets="@../values/style.css">
+         <content>
+            <GridPane fx:id="grid" prefHeight="1.0" prefWidth="0.0" stylesheets="@../values/style.css">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+            </GridPane>
+         </content>
+      </ScrollPane>
+      <Label fx:id="ynghia" alignment="TOP_LEFT" layoutX="389.0" layoutY="420.0" prefHeight="116.0" prefWidth="486.0" text="Label">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button layoutX="32.0" layoutY="492.0" mnemonicParsing="false" onAction="#switchToScene1" prefHeight="43.0" prefWidth="46.0" style="-fx-background-radius: 360; -fx-background-color: #3075C2;" text="Back" textFill="#f4ecec" />
+      <Button alignment="CENTER" layoutX="809.0" layoutY="484.0" mnemonicParsing="false" onAction="#switchToScene3" prefHeight="50.0" prefWidth="54.0" style="-fx-background-color: #3075C2; -fx-background-radius: 360;" text="Test" textFill="#f7f7f7" />
+      <Button layoutX="819.0" layoutY="439.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="36.0">
+         <graphic>
+            <ImageView fitHeight="27.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/speaker.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+   </children>
+</AnchorPane>

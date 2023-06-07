@@ -1,0 +1,46 @@
+.text-file{
+-fx-background-color:#FFFFFF;
+-fx-background-radius:100;
+}
+.list-view{
+-fx-background-color:#84C8F6;
+-fx-background-radius:20;
+}
+.transparent{
+-fx-background-color:rgba(0,0,0,0);
+}
+.shadow{
+	-fx-effect:dropShadow(three-pass-box,rgba(0,0,0,0.1),10.0,0.0,0.0,10.0);
+}
+.roundbutton{
+	-fx-background-radius:100;
+	-fx-background-color:#F5014F;
+}
+.pane{
+    -fx-background-image: url("/img/AnhGauTruc.jpg");
+    -fx-background-repeat: stretch;   
+    -fx-background-size: 890 554;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0); 
+}
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color:#7EBFEA;
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+}
+
+.list-cell:even { /* <=== changed to even */
+    -fx-background-color:#7EBFEA;
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+}
+.list-cell:odd { /* <=== changed to even */
+    -fx-background-color:#7EBFEA;
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+}
+.list-cell:filled:hover {
+    -fx-background-color:#7EBFEA;
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+}
